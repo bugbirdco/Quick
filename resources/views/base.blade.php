@@ -7,20 +7,8 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-<div id="app" class="d-none" :class="{'d-flex': ready}">
-    <header>
-        @include('partials.header')
-    </header>
-    <main>
-        <b-container :fluid='@json($fluid ?? false)'>
-            @yield('content')
-        </b-container>
-    </main>
-    <footer>
-        <b-container fluid>
-            @include('partials.footer')
-        </b-container>
-    </footer>
+<div id="app" class="d-none @json($pageClass ?? null)" :class='{"d-flex": ready}'>
+    @yield('content')
     @stack('portal')
 </div>
 
