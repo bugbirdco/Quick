@@ -2,11 +2,7 @@
     "name": "bugbirdco/quick",
     "type": "project",
     "description": "Preconfigured Laravel with Vue and Bootstrap",
-    "keywords": [
-        "framework",
-        "laravel"
-    ],
-    "license": "MIT",
+    "license": "BSD-3-Clause",
     "require": {
         "php": "^7.2.5",
         "ext-json": "*",
