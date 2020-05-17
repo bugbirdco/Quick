@@ -61,11 +61,5 @@
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
         ]
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "ssh://git-codecommit.eu-west-2.amazonaws.com/v1/repos/Avantik-Module"
-        }
-    ]
+    }
 }
