@@ -21,19 +21,6 @@ import './validator'
 
 // RUN!
 
-window.addEventListener('DOMContentLoaded', () => {
-    window.$app.ready = true;
-});
-
-window.$app = new Vue({
+new Vue({
     el: '#app',
-    // router,
-    // store,
-    data() {
-        return {
-            ...window.$setup.data,
-            ready: false,
-        }
-    },
-    ...window.$setup.constructor
 });

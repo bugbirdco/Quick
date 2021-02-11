@@ -7,18 +7,11 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-<div id="app" class="d-none @json($pageClass ?? null)" :class='{"d-flex": ready}'>
+<div id="app">
     @yield('content')
     @stack('portal')
 </div>
 
-<script>
-    window.$setup = {
-        constructor: {},
-        data: {}
-    };
-</script>
-@stack('setup')
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
